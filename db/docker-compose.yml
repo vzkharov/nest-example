@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  mongo:
+    image: mongo:5.0
+    ports:
+      - ${MONGODB_PORT}:${MONGODB_PORT}
+    restart: on-failure
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD}
+    networks:
+      - api
+    volumes:
+      - ./backup:/data/mongo
+    container_name: transferdb
+networks:
+  api:
+    driver: bridge

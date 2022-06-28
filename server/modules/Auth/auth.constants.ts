@@ -1,0 +1,3 @@
+export const USER_NOT_FOUND = 'USER_NOT_FOUND'
+export const OTP_INCORRECT = 'OTP_INCORRECT'
+export const OTP_VERIFIED = 'OTP_VERIFIED'
