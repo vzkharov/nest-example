@@ -1,9 +1,10 @@
 import { NestFactory, NestApplication } from '@nestjs/core'
 import { ValidationPipe } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
+import helmet from 'helmet'
 
-import { GlobalFilter } from '~server/common/filters/global.filter'
-import { GlobalInterceptor } from '~server/common/interceptors/global.interceptor'
+import { GlobalFilter } from '~/common/filters/global.filter'
+import { GlobalInterceptor } from '~/common/interceptors/global.interceptor'
 
 import { AppModule } from './app.module'
 
@@ -16,6 +17,12 @@ async function bootstrap() {
     app.useGlobalFilters(new GlobalFilter())
     app.useGlobalInterceptors(new GlobalInterceptor())
     app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }))
+
+    app.use(helmet())
+
+    app.enableCors({
+        origin: '*',
+    })
 
     await app.listen(port || 3000)
 }

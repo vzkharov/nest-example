@@ -3,7 +3,7 @@ import { v4 as uuid } from 'uuid'
 import { Document } from 'mongoose'
 import { Exclude } from 'class-transformer'
 
-import { Position } from '~server/modules/Transfers/schema/position.schema'
+import { Position } from '~/modules/Transfers/schema/position.schema'
 
 export type DriverDocument = Driver & Document
 

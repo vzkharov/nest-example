@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
 import { v4 as uuid } from 'uuid'
 import { Document } from 'mongoose'
 
-import { User } from '~server/modules/Users/schema/user.schema'
+import { User } from '~/modules/Users/schema/user.schema'
 
 import { RouteSchema, Route } from './route.schema'
 

@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators'
 import {
     getGlobalResponse,
     GlobalResponse,
-} from '~server/common/helpers/getGlobalResponse'
+} from '~/common/helpers/getGlobalResponse'
 
 @Injectable()
 export class GlobalInterceptor<T>

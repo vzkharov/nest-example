@@ -2,8 +2,8 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
 import { totp, authenticator } from 'otplib'
 
-import { UsersService } from '~server/modules/Users/users.service'
-import { SignUserDto, UserDto } from '~server/modules/Users/dto'
+import { UsersService } from '~/modules/Users/users.service'
+import { SignUserDto, UserDto } from '~/modules/Users/dto'
 
 import { OTP_INCORRECT, USER_NOT_FOUND } from './auth.constants'
 

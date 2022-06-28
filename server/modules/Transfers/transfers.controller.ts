@@ -1,8 +1,8 @@
 import { Get, Post, Body, Param, Delete, Controller } from '@nestjs/common'
 
-import { MongooseClassSerializerInterceptor } from '~server/common/decorators/MongooseClassSerializer'
-import { CurrentUser } from '~server/common/decorators/CurrentUser'
-import { User } from '~server/modules/Users/schema/user.schema'
+import { MongooseClassSerializerInterceptor } from '~/common/decorators/MongooseClassSerializer'
+import { CurrentUser } from '~/common/decorators/CurrentUser'
+import { User } from '~/modules/Users/schema/user.schema'
 
 import { CreateTransferDto, UpdateTransferDto, TransferDto } from './dto'
 

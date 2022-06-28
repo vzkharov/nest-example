@@ -2,7 +2,7 @@ import { Model } from 'mongoose'
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common'
 import { InjectModel } from '@nestjs/mongoose'
 
-import { USER_NOT_FOUND } from '~server/modules/Auth/auth.constants'
+import { USER_NOT_FOUND } from '~/modules/Auth/auth.constants'
 
 import { User, type UserDocument } from './schema/user.schema'
 import { UpdateUserDto } from './dto'

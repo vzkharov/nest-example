@@ -10,10 +10,10 @@ import {
     Controller,
 } from '@nestjs/common'
 
-import { MongooseClassSerializerInterceptor } from '~server/common/decorators/MongooseClassSerializer'
-import { SignUserDto, UpdateUserDto, UserDto } from '~server/modules/Users/dto'
-import { UsersService } from '~server/modules/Users/users.service'
-import { CurrentUser } from '~server/common/decorators/CurrentUser'
+import { MongooseClassSerializerInterceptor } from '~/common/decorators/MongooseClassSerializer'
+import { SignUserDto, UpdateUserDto, UserDto } from '~/modules/Users/dto'
+import { UsersService } from '~/modules/Users/users.service'
+import { CurrentUser } from '~/common/decorators/CurrentUser'
 
 import { JwtAuthGuard } from './guards/jwt.guard'
 

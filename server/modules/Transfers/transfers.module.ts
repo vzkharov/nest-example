@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common'
 import { MongooseModule } from '@nestjs/mongoose'
 
-import { UsersModule } from '~server/modules/Users/users.module'
+import { UsersModule } from '~/modules/Users/users.module'
 
 import { Transfer, TransferSchema } from './schema/transfer.schema'
 

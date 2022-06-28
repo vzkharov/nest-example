@@ -2,7 +2,7 @@ import { Model } from 'mongoose'
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common'
 import { InjectModel } from '@nestjs/mongoose'
 
-import { UsersService } from '~server/modules/Users/users.service'
+import { UsersService } from '~/modules/Users/users.service'
 
 import { Transfer, TransferDocument } from './schema/transfer.schema'
 import { CreateTransferDto, UpdateTransferDto } from './dto'

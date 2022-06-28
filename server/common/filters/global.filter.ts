@@ -5,7 +5,7 @@ import {
     InternalServerErrorException,
 } from '@nestjs/common'
 
-import { getGlobalResponse } from '~server/common/helpers/getGlobalResponse'
+import { getGlobalResponse } from '~/common/helpers/getGlobalResponse'
 
 @Catch()
 export class GlobalFilter implements ExceptionFilter {
