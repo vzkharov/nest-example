@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
-    "db": "docker-compose -f ./mongodb.yml",
+    "db": "docker-compose ",
     "server:build": "nest build",
     "server:dev": "nest start --watch",
     "start:dev": "yarn prebuild && yarn db && yarn server:dev",

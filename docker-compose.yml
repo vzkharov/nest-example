@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  mongo:
+    build:
+      dockerfile: db/Dockerfile
+    restart: on-failure
+    volumes:
+      - ./db/backup:/data/mongo
+    container_name: mongodb

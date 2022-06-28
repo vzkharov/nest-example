@@ -1,0 +1,6 @@
+FROM mongo:5.0
+
+ARG MONGO_INITDB_ROOT_USERNAME=itsjustmongodbuser
+ARG MONGO_INITDB_ROOT_PASSWORD=anditsjustmongodbpassword
+
+EXPOSE 27017
